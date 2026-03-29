@@ -3,7 +3,7 @@ import videoFile from "../assets/food3_2.mp4";
 
 const Hero = () => {
   return (
-    <div className="position-relative" id = 'home'>
+   <div className="position-relative">
   <video
     autoPlay
     muted
@@ -14,8 +14,9 @@ const Hero = () => {
     <source src={videoFile} type="video/mp4" />
   </video>
 
-  {/* Text on top */}
-   <div
+  {/* 🔥 Bottom Text */}
+  <div
+    className="position-absolute w-100 text-center text-white"
     style={{
       bottom: "40px",
       left: "50%",
@@ -25,7 +26,6 @@ const Hero = () => {
     <p className="fs-4 mb-1">Welcome to</p>
     <h1 className="display-3 fw-bold">MADRAS CLASSIC CAFE</h1>
   </div>
-
 </div>
   )
 }
